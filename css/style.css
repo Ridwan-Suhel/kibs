@@ -1,0 +1,845 @@
+/*
+  Theme Name: HTML Template
+  Author: Ridwan Suhel
+  Support: ridwansuhel96@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:300,400,600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+.container {
+    width: 65%;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    margin: auto;
+    width: 41rem;
+}
+
+.title h1 {
+    color: #333;
+    font-size: 3.8rem;
+    letter-spacing: .1rem;
+}
+
+.title img {
+    width: 3.8rem;
+    margin: 1rem 0;
+}
+
+.title p {
+    color: #969595;
+    font-size: 1.4rem;
+}
+
+.btn {
+    cursor: pointer;
+    color: #fff;
+    padding: 1rem 1.8rem;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+    border-radius: .1rem;
+    transition: .3s;
+    border: none;
+    background: #67E6DF;
+}
+
+.btn:hover {
+    background: #68d4ce;
+}
+
+a {
+    text-decoration: none;
+}
+
+a {
+    font-size: 1.6rem;
+}
+
+/*======================== 
+universel areaend here
+=========================*/
+
+.carousal_wrapper {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+
+header .left_area {
+    width: calc(33% - 20rem);
+    height: 100vh;
+    background: #fff;
+}
+
+header .right_area {
+    width: calc(67% + 20rem);
+    height: 100vh;
+    background: #67e6e0;
+    border-left: 480px solid #fff;
+    border-bottom: 738px solid transparent;
+}
+
+header {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+header .hero_model {
+    position: absolute;
+    bottom: -25px;
+    left: 14rem;
+    width: 43rem;
+}
+
+header .hero_model img {
+    width: 100%;
+    display: block;
+}
+
+header .top_nav_wrapper.sticky {
+    background: #0a928c;
+    position: fixed;
+    border-bottom: 1px solid #e5e7e4;
+    left: 0px;
+    box-shadow: 0px 1px 2px 0px #e5e7e4;
+    right: 0px;
+    z-index: 99999999;
+    transition: all .5s;
+}
+
+header .top_nav_wrapper.sticky .top_nav{
+    padding: 1rem 0;
+    transition: all .5s;
+}
+header .top_nav_wrapper.sticky .mobile-menu span {
+    top: 34px;
+}
+header .top_nav_wrapper.sticky .mobile-menu #myNav {
+    top: 27px;
+     border-radius: 0px; 
+}
+header .top_nav_wrapper.sticky .mobile-menu .closebtn {
+    background: #0a928c;
+}
+header .top_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    margin: auto;
+    padding: 2rem 0;
+    position: relative;
+}
+
+header .top_nav .logo {
+    width: 6rem;
+}
+
+header .top_nav .logo img {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+
+header .top_nav .social_link {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+header .top_nav .social_link ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+header .top_nav .social_link ul li {
+    margin: 0px 2rem;
+    display: inline-block;
+}
+
+header .top_nav .social_link ul li a {
+    text-decoration: none;
+}
+
+header .top_nav .social_link ul li a i {
+    color: #fff;
+    font-size: 2.2rem;
+    transition: .3s;
+}
+
+header .top_nav .social_link ul li a i:hover {
+    color: #262A34;
+}
+
+/*mobile-menu*/
+
+.mobile-wrapper{
+    display: block;
+    z-index: 9999999;
+}
+.mobile-menu{
+        background: rgba(0,0,0,0.8);
+    }
+    .mobile-menu #myNav{
+        width: 50%;
+        height: 0px;
+        overflow: hidden;
+        background: transparent;
+        position: absolute;
+        top: 39px;
+        right: 0px;
+        transition: .3s;
+        border-radius: 5px; 
+    }
+.mobile-menu .overlay-content{
+        background: #333;
+        margin-top: 31px;
+    }
+.mobile-menu .overlay-content a{
+        display: block;
+        color: #fff;
+        padding: 10px 30px;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        
+    }
+     .mobile-menu .overlay-content a:hover{
+        background: rgba(0,0,0,0.6);
+    }
+    .mobile-menu span{
+        position: absolute;
+        right: 0px;
+        top: 44px;
+        color: red;
+        /*font-size: 30px;*/
+        cursor: pointer;
+        width: 35px;
+
+    }
+        .mobile-menu span img{
+            width: 100%;
+        }
+    .close-div{
+        background: transparent;
+        text-align: right;
+        margin-right: 0px;
+    }
+    .mobile-menu .closebtn{
+        color: #333;
+        font-size: 30px;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        background: #67E6E0;
+        width: 35px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+/*mobile-menu end*/
+
+/*==============================
+scroll top css start
+==============================*/
+.scroll_top .scroll {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    z-index: 999;
+    display: none;
+}
+
+.scroll_top .scroll i {
+    color: #fff;
+    font-size: 2rem;
+
+    line-height: 50px;
+}
+
+/*==============================
+scroll top css end
+==============================*/
+
+/*hero title start from here*/
+
+.hero_title {
+    width: 55.5rem;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+}
+
+.hero_title h1 {
+    font-size: 6.5rem;
+    color: #3c3d41;
+
+}
+
+.hero_title h2 {
+    font-size: 3.4rem;
+    color: #3c3d41;
+    text-transform: uppercase;
+
+}
+
+.hero_title p {
+    color: #262a34;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2rem;
+    margin: 3rem 0 4.5rem 0;
+}
+
+.hero_title a {
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.hero_title a #subscribe,
+.hero_title a #lets_rock {
+    background: transparent;
+    border: .2rem solid #fff;
+}
+
+.hero_title a #subscribe:hover,
+.hero_title a #lets_rock:hover {
+    background: #262A34;
+    border: .2rem solid transparent;
+}
+
+/*---------------service section start from here---------------*/
+
+.service_section {
+    padding: 10rem 0;
+}
+
+.service_box_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rem;
+}
+
+.service_box_wrapper .service_box {
+    width: 200px;
+    padding: 4rem 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: .3rem;
+}
+
+.service_box_wrapper .service_box .icon i {
+    padding: 1.4rem 1rem;
+    border: .1rem solid #ccc;
+    color: #ccc;
+    font-size: 1.8rem;
+    border-radius: 1.4rem;
+    transition: .5s;
+}
+
+.service_box_wrapper .service_box p {
+    color: #313131;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+}
+
+.service_box_wrapper .service_box p + p {
+    color: #969595;
+    font-size: 1.3rem;
+
+}
+
+.service_box_wrapper .service_box:hover {
+    box-shadow: 0px 1px 14px 0px #b7b7b7;
+}
+
+.service_box_wrapper .service_box:hover .icon i {
+    background: #67E6E0;
+    border: .1rem solid #67E6E0;
+    color: #fff;
+}
+
+/*===========service section end here===============*/
+
+/*===========about section start here===============*/
+.about_section {
+    background-image: url(../img/about_bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0px 15%;
+}
+
+.about_section .about_wrapper {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.about_section .about_wrapper .about_content {
+    width: 520px;
+}
+
+.about_section .about_wrapper .about_content h1 {
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 400;
+}
+
+.about_section .about_wrapper .about_content p {
+    font-size: 1.4rem;
+    color: #fff;
+    margin: 30px 0px 60px 0px;
+}
+
+.about_section .about_right_phone {
+    width: 565px;
+    position: absolute;
+    right: 90px;
+    top: 50px;
+}
+
+.about_section .about_right_phone img {
+    width: 100%;
+    display: block;
+}
+
+/*===========about section end here===============*/
+
+/*===========portfolio section start here===============*/
+.portfolio_section {
+    padding: 100px 0 120px 0;
+}
+
+.portfolio_section .port_nav {
+    margin: 80px 0px 60px 0px;
+    text-align: center;
+}
+
+.portfolio_section .port_nav a {
+    cursor: pointer;
+    color: #000;
+    padding: 1rem 1.8rem;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+    border-radius: .1rem;
+    transition: .3s;
+    border: none;
+    background: #e5e5e5;
+}
+
+.portfolio_section .port_nav a:hover {
+    background: #67E6DF;
+    color: #fff;
+}
+
+.portfolio_section .port_nav a:focus {
+    background: #67E6DF;
+    color: #fff;
+}
+
+.portfolio_section .port_box_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.portfolio_section .port_box_wrapper .port_box {
+    position: relative;
+    margin: .5% .5%;
+    cursor: pointer;
+    overflow: hidden;
+    width: 32%;
+    box-sizing: border-box;
+}
+
+.portfolio_section .port_box_wrapper .port_box img {
+    display: block;
+    width: 100%;
+
+}
+
+.portfolio_section .port_box_wrapper .port_box .hover_icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #24efe59c;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .4s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.portfolio_section .port_box_wrapper .port_box .hover_icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #fff;
+    transition: .7s ease-in-out;
+    opacity: 0;
+}
+
+.portfolio_section .port_box_wrapper .port_box:hover .hover_icon {
+    opacity: 1;
+    transform: translateX(0%);
+
+}
+
+.portfolio_section .port_box_wrapper .port_box:hover .hover_icon i {
+    opacity: 1;
+}
+
+/*===========portfolio section end here===============*/
+
+/*===========testimnial section start===============*/
+.testimonial_section {
+    padding: 80px 20% 100px 20%;
+    background-image: url(../img/testimonial_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.testimonial_section .title p {
+    color: #262a34;
+}
+
+.testimonial_section .testimonial_content {
+    width: 75%;
+    margin-top: 4.5rem;
+    margin-left: auto;
+    position: relative;
+}
+.testimonial_section .testimonial_content .clients_quotes {
+    width: 90%;
+    margin-left: auto;
+    
+}
+
+.testimonial_section .testimonial_content .clients_quotes .test_box {
+    width: 100%;
+    border-radius: 1rem;
+    background: #fff;
+    padding: 40px 75px 40px 80px;
+    line-height: 2.6rem;
+    position: relative;
+}
+
+.testimonial_section .testimonial_content .clients_quotes .test_box:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right: 20px solid #fff;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+    transform: translateY(-50%);
+}
+
+.testimonial_section .testimonial_content .clients_quotes .test_box span:first-child {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    color: #75e6e0;
+    font-size: 3rem;
+    transform: rotate(-175deg);
+}
+
+.testimonial_section .testimonial_content .clients_quotes .test_box span.right_quote {
+    position: absolute;
+    bottom: 35px;
+    right: 60px;
+    color: #75e6e0;
+    font-size: 3rem;
+    transform: rotate(5deg);
+}
+
+.testimonial_section .testimonial_content .clients_quotes .test_box p {
+    color: #262a34;
+    font-size: 1.53rem;
+}
+
+.testimonial_section .testimonial_content .clients_quotes .test_box h5 {
+    color: #75e6e0;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.testimonial_section .test_model {
+    width: 450px;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+}
+
+.testimonial_section .test_model img {
+    width: 450px;
+    display: block;
+}
+
+/*-----owl button------------*/
+
+/*.owl-carousel .owl-nav .owl-prev,
+ .owl-carousel .owl-nav .owl-next{
+    position: absolute;
+    bottom: -50px;
+    left: 60%;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #333;
+    text-align: center;
+    font-size: 14px;
+
+}
+ .owl-carousel .owl-nav .owl-prev {
+    right: auto;
+    left: 47%;
+ }
+ .owl-carousel .owl-nav .owl-next {
+    left: auto;
+    right: 40%;
+ }*/
+
+.owl-carousel .owl-dots .owl-dot{
+    background: #ddd;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    border-radius: 50%;
+}
+.owl-carousel .owl-dots .owl-dot:nth-child(2){
+    left: 55%;
+}
+.owl-carousel .owl-dots .owl-dot:nth-child(3){
+    left: 60%;
+}
+.owl-carousel .owl-dots .owl-dot.active{
+    background: #fff;
+    width: 20px;
+    border-radius: 30%;
+    margin-left: -5px;
+}
+
+/*===========testimnial section end here===============*/
+/*===========team section start here===============*/
+.team_section {
+    padding: 100px 0px;
+}
+
+.team_section .title {
+    margin-bottom: 100px;
+}
+
+.team_section .team_flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team_section .team_flex .team_box {
+    width: 33.33%;
+    margin: 0px 10px;
+}
+
+.team_section .team_flex .team_box .team_img img {
+    width: 100%;
+    display: block;
+}
+
+.team_section .team_flex .team_box .team_content {
+    text-align: center;
+    border: 1px solid #f1f1f1;
+    padding: 20px 10px;
+}
+
+.team_section .team_flex .team_box .team_content h4 {
+    color: #313131;
+    font-size: 1.6rem;
+    font-family: font-family: 'Open Sans', sans-serif;
+}
+
+.team_section .team_flex .team_box .team_content p {
+    font-size: 1.3rem;
+    color: #969595;
+    margin: 15px 0px;
+}
+
+.team_section .team_flex .team_box .team_content .team_social {
+    padding: 15px 0 0 0;
+    border-top: 1px solid #f1f1f1;
+}
+
+.team_section .team_flex .team_box .team_content .team_social a {
+    text-decoration: none;
+    margin: 0px 2px;
+
+}
+
+.team_section .team_flex .team_box .team_content .team_social a i {
+    border: 1px solid #f1f1f1;
+    transition: .3s;
+    line-height: 38px;
+    font-size: 1.6rem;
+    color: #dadada;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+.team_section .team_flex .team_box .team_content .team_social a:hover i {
+    background: #67e6e0;
+}
+
+/*===========team section end here===============*/
+
+/*===========joinUs section start here===============*/
+.joinUs_section {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: #262A35;
+}
+
+.joinUs_section .title {
+    width: 100%;
+}
+
+.joinUs_section .title h1 {
+    color: #fff;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.joinUs_section .title p {
+    line-height: 2.5rem;
+    color: #969595;
+}
+
+.joinUs_section .joinUs_content {
+    width: 50%;
+    margin: auto;
+}
+
+.joinUs_section .joinUs_content .join_form {
+    width: 80%;
+    margin: 50px auto 0;
+    text-align: center;
+}
+
+.joinUs_section .joinUs_content .join_form input[type="email"] {
+    width: 60%;
+    padding: 14px 20px;
+    border: none;
+    margin-right: 10px;
+    background: #51555D;
+    color: #fff;
+}
+
+.joinUs_section .joinUs_content .join_form input[type="submit"] {
+    width: 20%;
+    padding: 14px 20px;
+    border: none;
+    font-size: 14px;
+}
+
+input[type="email"]::placeholder {
+    color: #fff;
+}
+
+.footer {
+    width: 400px;
+    margin: 100px auto 0px;
+    text-align: center;
+}
+
+.footer .footer_logo {
+    width: 70px;
+    margin: auto;
+}
+
+.footer .footer_logo img {
+    width: 70px;
+}
+
+.footer p {
+    margin: 30px 0px;
+    font-size: 14px;
+    font-family: 'Bree Serif', serif;
+    color: #fff;
+}
+
+.footer p a {
+    font-size: 14px;
+    color: #67e6e0;
+}
+
+/*===========joinUs section end here===============*/
+.footer .footer_social a {
+    margin: 0px 10px;
+}
+
+.footer .footer_social a i {
+    font-size: 22px;
+    color: #fff;
+}
